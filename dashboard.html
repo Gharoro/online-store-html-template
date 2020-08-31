@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="./images/logo.png" width="125px" alt="logo" />
+          </div>
+          <nav>
+            <ul id="menu-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <img src="./images/cart.png" width="30px" height="30px" alt="" />
+          </a>
+
+          <img
+            src="./images/menu.png"
+            class="menu-icon"
+            onclick="menu_toggle()"
+          />
+        </div>
+      </div>
+    </div>
+    <!------------ dashboard --------->
+    <div class="account-container">
+      <div class="container">
+        <div class="row">
+          <div class="left-side">
+            <div class="my-acct">
+              <h3>My Account</h3>
+              <hr id="acct-indicator" />
+            </div>
+            <div class="link">
+              <a href="dashboard.html">
+                <p><i class="fa fa-list acct-fa"></i> Dashboard</p>
+              </a>
+            </div>
+            <div class="link">
+              <a href="orders.html">
+                <p><i class="fa fa-list acct-fa"></i> Orders</p>
+              </a>
+            </div>
+
+            <div class="link">
+              <a href="#">
+                <p><i class="fa fa-sticky-note acct-fa"></i> Pending Review</p>
+              </a>
+            </div>
+
+            <div class="link">
+              <a href="#">
+                <p><i class="fa fa-heart acct-fa"></i> Saved Items</p>
+              </a>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="my-acct">
+              <h3>Account Overview</h3>
+              <hr id="right-indicator" />
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="w3-card-4">
+                  <div class="w3-container">
+                    <h5>
+                      ACCOUNT DETAILS
+                      <span style="float: right"
+                        ><a href="edit.html"><i class="fas fa-edit"></i></a
+                      ></span>
+                    </h5>
+                    <hr />
+                    <p>Pureheart Gharoro</p>
+                    <small>gharorookeoghene@gmail.com</small>
+                    <hr />
+                    <a href="change-password.html" class="button"
+                      >Change Password</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="w3-card-4">
+                  <div class="w3-container">
+                    <h5>
+                      ADDRESS BOOK
+                      <a href="#">
+                        <span style="float: right">
+                          <i class="fas fa-edit"></i></span
+                      ></a>
+                    </h5>
+                    <hr />
+                    <h6>Your default shipping address:</h6>
+                    <br />
+                    <p>Gharoro Pureheart</p>
+                    <p>No 25 akinwummi street, ifako, gbagada.</p>
+                    <p>GBAGADA, Lagos</p>
+                    <p>+234 8169560365</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------ FOOTER --------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS</p>
+            <div class="app-logo">
+              <img src="./images/play-store.png" alt="" />
+              <img src="./images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="./images/logo-white.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make The Pleasure and Benefits Of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>We Are Social</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 - RedStore</p>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
